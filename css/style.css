@@ -34,7 +34,7 @@ ul{
     margin-left: 20px;
 }
 .main_banner{
-background-image: url(/images/12.png);
+background-image: url("../images/12.png");
     background-size: cover;
     height: 100vh;
     padding: 88px 0 34px;
