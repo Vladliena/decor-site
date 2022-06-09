@@ -181,7 +181,6 @@ form div label {
 form a {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 300;
     font-size: 20px;
     line-height: 30px;
     background: linear-gradient(90deg, #4C6071 0%, #55BDEA 100%);
@@ -238,15 +237,15 @@ div textarea {
 }
 
 .catalog .cataloglist {
-    margin: auto;
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
-
-.catalog div img {
-    margin-right: 30px;
-    margin-bottom: 20px;
+.catalog .container{
+    margin-bottom: 40px;
+}
+.catalog .container:last-of-type{
+    margin-bottom: 70px;
 }
 
 .catalog H3 {
@@ -277,6 +276,12 @@ div textarea {
     font-weight: 300;
     font-size: 20px;
     line-height: 30px;
+    background: linear-gradient(90deg, #4C6071 0%, #55BDEA 100%);
+    box-shadow: 0 0 166px rgba(0, 0, 0, 0.2), 8px 8px 109px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 20px 48px;
+    text-decoration: none;
+    border: none;
     color: #FFFFFF;
 }
 
@@ -287,9 +292,13 @@ div textarea {
     padding: 60px 0 95px;
 }
 
-.video_list {
+.videoreview .container {
     justify-content: space-between;
     display: flex;
+}
+
+.videoreview .container div {
+    position: relative;
 }
 
 .videoreview H3 {
@@ -298,13 +307,9 @@ div textarea {
     font-size: 24px;
     line-height: 31px;
     color: #FFFFFF;
-    left: 97px;
     position: relative;
+    left: 260px;
     margin-bottom: 52px;
-}
-
-.videoreview .container div {
-    position: relative;
 }
 
 .videoreview .play_icon {
@@ -312,7 +317,8 @@ div textarea {
     top: 53px;
     right: 52px;
 }
-.videoreview H5{
+
+.videoreview H5 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -322,7 +328,8 @@ div textarea {
     max-width: 253px;
     margin-bottom: 10px;
 }
-.videoreview .video_list p{
+
+.videoreview p {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 16px;
