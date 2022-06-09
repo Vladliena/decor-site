@@ -307,8 +307,8 @@ div textarea {
     font-size: 24px;
     line-height: 31px;
     color: #FFFFFF;
-    position: relative;
-    left: 260px;
+    max-width: 920px;
+    margin: auto;
     margin-bottom: 52px;
 }
 
