@@ -289,7 +289,7 @@ div textarea {
     background-color: #4C6071;
     background-image: url("../images/Mask Group.svg");
     background-size: cover;
-    padding: 60px 0 95px;
+    padding: 60px 0 47px;
 }
 
 .videoreview .container {
@@ -297,8 +297,14 @@ div textarea {
     display: flex;
 }
 
-.videoreview .container div {
+.videoreview .container .video_blocks {
     position: relative;
+    max-width: 255px;
+    margin-bottom: 47px;
+}
+.videoreview .container .video_blocks img:first-of-type{
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .videoreview H3 {
@@ -312,7 +318,7 @@ div textarea {
     margin-bottom: 52px;
 }
 
-.videoreview .play_icon {
+.videoreview a {
     position: absolute;
     top: 53px;
     right: 52px;
@@ -336,5 +342,4 @@ div textarea {
     line-height: 24px;
     color: #FFFFFF;
     text-align: left;
-    max-width: 253px;
 }
