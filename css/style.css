@@ -139,6 +139,54 @@ article {
     max-width: 770px;
 }
 
+.cards_section {
+    background-color: #4C6071;
+    background-image: url("../images/Mask Group.svg");
+    background-size: cover;
+    padding: 60px 0 60px;
+}
+
+.cards_section H3 {
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: #FFFFFF;
+    max-width: 920px;
+    margin: auto;
+    margin-bottom: 52px;
+}
+
+.cards_section .article_cards {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 255px;
+    background-color: #FFFFFF;
+    display: block;
+    text-align: left;
+}
+.cards_section img{
+    position: relative;
+    left: 67px;
+    margin-bottom: 50px;
+}
+
+.cards_section .article_cards H5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 195px;
+    margin-bottom: 10px;
+}
+
+.cards_section .article_cards p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 195px;
+}
 .form_page {
     background-color: #FFFFFF;
     background-size: cover;
@@ -358,12 +406,12 @@ footer {
 footer .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .contacts_1 {
     max-width: 156px;
     flex-direction: column;
-    justify-content: space-between;
     text-align: left;
 }
 
@@ -394,16 +442,21 @@ footer .container {
 .contacts_2 {
     max-width: 150px;
     flex-direction: column;
-    justify-content: space-between;
     text-align: right;
+    justify-content: space-between;
 }
 
-.map_color {
-    background-color: black;
-    opacity: 0.6;
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.contacts_2 ul {
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.contacts_2 ul li:nth-child(-n+2) {
+    margin-bottom: 30px;
 }
 
 .map {
@@ -412,11 +465,26 @@ footer .container {
     border-radius: 20px;
     overflow: hidden;
     position: relative;
+    text-align: center;
+}
+
+.map::before {
+    content: "";
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .map a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
     position: absolute;
-    top: 45px;
-    left: 95px;
-
+    left: 137px;
+    top: 40px;
+    color: #FFFFFF;
+    text-decoration: none;
 }
