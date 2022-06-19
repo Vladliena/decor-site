@@ -414,18 +414,20 @@ div textarea {
     padding: 60px 0 47px;
 }
 
-.videoreview .container {
+.videoreview .owl-carousel {
     justify-content: space-between;
     display: flex;
+    margin: auto;
+    max-width: 1118px;
 }
 
-.videoreview .container .video_blocks {
+.videoreview .owl-carousel .video_blocks {
     position: relative;
     max-width: 255px;
     margin-bottom: 47px;
 }
 
-.videoreview .container .video_blocks img:first-of-type {
+.videoreview .owl-carousel .video_blocks img:first-of-type {
     width: 100%;
     margin-bottom: 20px;
 }
@@ -559,4 +561,34 @@ footer .container {
     top: 40px;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.owl-nav .owl-prev:before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f053";
+    font-size: 30px;
+    color: #FFFFFF;
+    position: relative;
+    right: 80px;
+    max-width: inherit;
+}
+
+.owl-nav .owl-next:before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f054";
+    font-size: 30px;
+    color: #FFFFFF;
+    position: relative;
+    left: 80px;
+    max-width: inherit;
+}
+
+.owl-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 130px;
 }

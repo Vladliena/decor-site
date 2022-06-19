@@ -6,6 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600&family=Manrope:wght@600&family=Montserrat:wght@600&family=Roboto:wght@300;400;500&display=swap"
@@ -48,7 +51,7 @@
 <section class="about_us">
     <img src="images/dots.png" alt="pattern" class="pattern">
     <div class="container d-flex">
-        <div>
+        <div class="wow fadeInLeft">
             <H3>О нас</H3>
             <div class="about_text">
                 <p>Мы хотим что бы наши проекты соответствовали нашим высоким требованиям и желаниям
@@ -60,32 +63,32 @@
             </div>
         </div>
         <div>
-            <img src="images/6.jpg" alt="photo2" class="image-display">
+            <img class="wow fadeInRight" data-wow-delay="0.5s" src="images/6.jpg" alt="photo2" class="image-display">
         </div>
     </div>
 </section>
 <section class="cards_section">
     <H3>Почему мы?</H3>
     <div class="container d-flex">
-        <article class="article_cards">
+        <article class="article_cards wow fadeIn" data-wow-delay="0.3s">
             <img src="images/check%201.svg" alt="icon">
             <H5>Первоклассное качество</H5>
             <p>Высокое качество исполнения реализованных проектов и благодарные отзывы счастливых клиентов позволяют
                 утверждать что декорирование стен – наше призвание.</p>
         </article>
-        <article class="article_cards">
+        <article class="article_cards wow fadeIn" data-wow-delay="0.6s">
             <img src="images/earth.svg" alt="icon">
             <H5>Материалы лучших брендов</H5>
             <p>Подбор материалов берем на себя. Работаем с такими Торговыми Марками как Feidal, Spiver, Oikos, elf
                 decor, San Marco</p>
         </article>
-        <article class="article_cards">
+        <article class="article_cards wow fadeIn" data-wow-delay="0.9s">
             <img src="images/bus.svg" alt="icon">
             <H5>Скорость выполнения работ</H5>
             <p>Приступаем к выполнению работ по Вашему заказку сразу после выезда специалиста на осмотр объекта.
                 Результат от 3-х рабочих дней.</p>
         </article>
-        <article class="article_cards">
+        <article class="article_cards wow fadeIn" data-wow-delay="1.2s">
             <img src="images/infinite.svg" alt="icon">
             <H5>Бесконечный творческий потенциал </H5>
             <p>Наша команда - это не только крутые специалисты, но и креативные творческие люди, которые знают как
@@ -157,7 +160,31 @@
 </section>
 <section class="videoreview">
     <H3>Видеоотзывы</H3>
-    <div class="container">
+    <div class="owl-carousel">
+        <div class="video_blocks">
+            <img alt="video" src="images/video1.png">
+            <a href="#" target="_blank"><img alt="icon" src="images/Play.png"></a>
+            <H5>Влажность и мебель</H5>
+            <p>Мармушка обычно используется для вылова в северных морях</p>
+        </div>
+        <div class="video_blocks">
+            <img alt="video" src="images/video2.png">
+            <a href="#" target="_blank"><img alt="icon" src="images/Play.png"></a>
+            <H5>Влажность и мебель</H5>
+            <p>Мармушка обычно используется для вылова в северных морях</p>
+        </div>
+        <div class="video_blocks">
+            <img alt="video" src="images/video3.png">
+            <a href="#" target="_blank"><img alt="icon" src="images/Play.png"></a>
+            <H5>Влажность и мебель</H5>
+            <p>Мармушка обычно используется для вылова в северных морях</p>
+        </div>
+        <div class="video_blocks">
+            <img alt="video" src="images/video4.png">
+            <a href="#" target="_blank"><img alt="icon" src="images/Play.png"></a>
+            <H5>Влажность и мебель</H5>
+            <p>Мармушка обычно используется для вылова в северных морях</p>
+        </div>
         <div class="video_blocks">
             <img alt="video" src="images/video1.png">
             <a href="#" target="_blank"><img alt="icon" src="images/Play.png"></a>
@@ -186,7 +213,7 @@
 </section>
 <section class="form_page">
     <img src="images/dots.png" class="pattern" alt="pattern">
-    <div class="container d-flex">
+    <div class="container d-flex wow fadeInLeft">
         <form action="#" method="post">
             <H3>Давайте обсудим ваш проект</H3>
             <div>
@@ -204,7 +231,7 @@
                     проект</a>
             </div>
         </form>
-        <div class="mw-615">
+        <div class="mw-615 wow fadeInRight" data-wow-delay="0.5s">
             <img src="images/10.jpg" alt="photo" class="image-display">
         </div>
     </div>
@@ -236,5 +263,16 @@
         </div>
     </div>
 </footer>
+<i class="fa-solid fa-chevron-left"></i>
+<script src="https://kit.fontawesome.com/1d44a8dca7.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 </html>
